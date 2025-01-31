@@ -30,6 +30,7 @@ FROM alpine:3.21
 
 COPY --from=builder /usr/local/aws-cli /usr/local/aws-cli
 COPY --from=builder /aws-cli-bin /aws-cli-bin
+
 RUN /aws-cli-bin/aws --version
 
 USER nobody:nogroup
