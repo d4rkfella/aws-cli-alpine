@@ -43,4 +43,4 @@ jobs:
 
       - name: Test if AWS CLI works
         run: |
-          docker run --rm ${{ env.IMAGE_NAME }} sh -c "/aws-cli-bin/aws --version"
+          docker run --rm ${{ env.IMAGE_NAME }} "/aws-cli-bin/aws --version"
