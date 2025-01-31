@@ -2,6 +2,7 @@ FROM python:3.11-alpine3.21 AS builder
 
 ARG AWS_CLI_VERSION=2.22.35
 
+
 RUN apk add --no-cache git \
         unzip \
         groff \
