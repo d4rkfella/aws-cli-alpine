@@ -20,7 +20,6 @@ RUN mkdir /aws && \
 RUN unzip /aws/dist/awscli-exe.zip && \
     ./aws/install --bin-dir /aws-cli-bin
 
-# Reduce image size: remove autocomplete and examples
 RUN rm -rf \
     /usr/local/aws-cli/v2/current/dist/aws_completer \
     /usr/local/aws-cli/v2/current/dist/awscli/data/ac.index \
