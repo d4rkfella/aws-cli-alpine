@@ -27,7 +27,6 @@ RUN rm -rf \
     find /usr/local/aws-cli/v2/current/dist/awscli/data -name completions-1*.json -delete && \
     find /usr/local/aws-cli/v2/current/dist/awscli/botocore/data -name examples-1.json -delete
 
-
 FROM alpine:3.21
 
 COPY --from=builder /usr/local/aws-cli /usr/local/aws-cli
