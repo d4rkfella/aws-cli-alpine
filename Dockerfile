@@ -41,3 +41,4 @@ CMD ["--version"]
 LABEL org.opencontainers.image.source="https://github.com/aws/aws-cli"
 LABEL org.opencontainers.image.url="https://github.com/d4rkfella/aws-cli-alpine"
 LABEL org.opencontainers.image.title="aws-cli-alpine"
+LABEL org.opencontainers.image.version="${AWS_CLI_VERSION}"
