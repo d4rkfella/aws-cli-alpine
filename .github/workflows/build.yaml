@@ -38,9 +38,11 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
+          labels: |
+              org.opencontainers.image.version=${{ env.AWS_CLI_VERSION }}
           tags: |
-              ghcr.io/${{ github.repository }}/aws-cli-alpine:latest
-              ghcr.io/${{ github.repository }}/aws-cli-alpine:${{ env.AWS_CLI_VERSION }}
+              ghcr.io/${{ github.repository }}:latest
+              ghcr.io/${{ github.repository }}:${{ env.AWS_CLI_VERSION }}
           platforms: linux/amd64
           file: Dockerfile
           context: .
